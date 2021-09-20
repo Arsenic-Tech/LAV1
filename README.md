@@ -18,11 +18,11 @@ Project is created with
 ### Setup
 To run this project, install it locally using Frecad or Inventor
 
-'''
+```
 $ git clone https://https://github.com/Ogweno-lab/LAV1
 $ cd LAV1
 # Open your preffered CAD software and open the design files
-'''
+```
 
 * **.vsp3** This are the OpenVsp files for various iterations of the LAV1
 * **.ipt** These are the part files for the various parts of the N1 rocket model.
