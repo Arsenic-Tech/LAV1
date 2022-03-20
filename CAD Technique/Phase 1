@@ -1,1 +1,42 @@
+Import and Export summary  VSP76
+
+Key Words
+
+1. OpenVSP
+2. Autodesk Inventor Professional 2022
+3. Autodesk AutoCAD 2022
+
+At the end of the design it was clearly realized that OpenVSP couldn’t suffice the complete modelling of the framework of the model.
+Below is  a description of the export and import process of the initial Vsp76 file  which was under the .vsp3 file format and its associated components to different software so as to serve different functions
+
+Procedure1 : Exporting to Autodesk Inventor Professional 2022.
+
+1.	Under File in the Menu Bar of OpenVSP software the Export function is selected.
+2.	The desired file format is Untrimmed STEP(.stp). 
+3.	Before exporting, the units should be set to the ones used in the model , in our case it is Metres.
+4.	The file generated takes the .stp format that can be easily interpreted by Autodesk Inventor Professional 2022
+5.	Inventor is then launched  and under File menu  Import CAD files is selected under Open command.
+6.	Immediately after the selection, an Import dialogue box appears prompting the user to key in information required for the conversion of the STEP file into an Inventor file.
+
+Under this dialog box, the following information is fed
+
+(i)	Import type: Convert model
+(ii)	Object Filters
+-	Solids 
+-	Surfaces
+-	Wires
+(iii)	Inventor length units : From source
+(iv)	Part options : surfaces -> stitch
+              The file is then converted to the Standard.ipt format ready for manipulation in Inventor.
+Procedure2 :  Rib Modelling  in Autodesk Inventor  Professional 2022.
+
+1.	The part generated is opened in sketch view.
+          Note//- here it is only logical to work with half the span of the model. The below operations were carried out on half the model.
+2.	Half the span of the model is 0.224m , we need 6 ribs of thickness 0.002m from the tip and therefore we generated 6 ribs with equal spacing of 0.025m in a sketch.
+3.	Off the sketch view , the ribs which are basically thin rectangles are extruded just above the wing’s largest profile and the Boolean operation Intersection is chosen to trim out a neat profile of solid ribs  that conform to the wings profile. 
+
+Procedure3 :Obtaining sketches from ribs and exporting to Autodesk AutoCAD 2022.
+Note//- The sketches generated from the rib will be needed in paper to scale and will be used to trace out the various profiles of the ribs during physical modelling of the ribs. (The mid rib was also included and is not part of the six ribs)
+1.	The faces of the ribs were selected individually and the sketches obtain using the Project Geometry function .
+2.	The 7 sketches were then exported to AutoCAD as .dxf file format.
 
